@@ -20,7 +20,7 @@ You can integrate the strategy into your middleware in a `config.ru`:
 
 ```ruby
 use OmniAuth::Builder do
-  provider :camdram, SETTINGS['CAMDRAM_APP_ID'], SETTINGS['CAMDRAM_APP_SECRET'], scope: "user_shows user_orgs user_email write write_org"
+  provider :camdram, ENV['CAMDRAM_APP_ID'], ENV['CAMDRAM_APP_SECRET'], scope: "user_shows user_orgs user_email write write_org"
 end
 ```
 
@@ -28,7 +28,7 @@ If you're using Rails, you'll want to add to the middleware stack:
 
 ```ruby
 Rails.application.config.middleware.use OmniAuth::Builder do
-  provider :camdram, SETTINGS['CAMDRAM_APP_ID'], SETTINGS['CAMDRAM_APP_SECRET'], scope: "user_shows user_orgs user_email write write_org"
+  provider :camdram, ENV['CAMDRAM_APP_ID'], ENV['CAMDRAM_APP_SECRET'], scope: "user_shows user_orgs user_email write write_org"
 end
 ```
 
