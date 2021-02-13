@@ -38,6 +38,10 @@ For additional information, please refer to the [OmniAuth wiki](https://github.c
 
 See the [example](https://github.com/camdram/omniauth-camdram/blob/master/examples/sinatra/config.ru) Sinatra app for full examples.
 
-## License
+---
 
-omniauth-camdram is released under the MIT License.
+### Copyright
+
+The code in this Git repository is released under the [MIT License](https://en.wikipedia.org/wiki/MIT_License).
+
+Copyright (c) 2018-2019 Members of the Camdram Web Team and other contributors.
